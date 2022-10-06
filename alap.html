@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="lista"></ul>
+
+    <script>
+        let nev="Gyula"
+        console.log('Szép napot '+nev +' !')
+        console.log(`Szép napot ${nev} ! Hogy vagy?`)
+        console.log(``)
+
+        let [a,b,c,d]=[1,2,3,4]
+        console.log(a,b,c,d)
+        const s=100
+
+        console.log(nev[0], nev.length, nev[nev.length-1])
+
+        let pont=59
+        /*let tipus='A2'
+        if(pont>=40){
+            console.log('Gratulálok!')
+        }
+
+        pont>=40 && tipus=='A2' && console.log('Gratulálok!!!')
+
+        let p='59'
+        p==pont && console.log('egyenlőek')*/
+
+        if(pont>=40)
+            console.log('Gratulálok!')
+        else
+            console.log('Sajnáljuk...')
+
+
+        pont>=40 ? console.log('Gratulálok!') : console.log('Sajnáljuk...........')
+
+
+        let szamok=[1,4,99,23,2,6]
+        console.log(szamok)
+        let ul=document.getElementById('lista')
+        console.log(ul)
+        let szoveg=''
+        for(let i=0;i<szamok.length;i++){
+            console.log(`index:${1} - érték: ${szamok[1]}`)
+            ul.innerHTML+=`<li>${szamok[1]}<li>`
+        }
+        console.log=(szoveg)
+
+    </script>
+</body>
+</html>

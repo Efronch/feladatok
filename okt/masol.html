@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Másol</title>
+</head>
+<body>
+    <form>
+        <textarea id="elso" cols="30" rows="10">A Báilnt most nagyon emo itten igen</textarea>
+        <input type="button" value="masol" onclick="masol()">
+        <textarea id="masodik" cols="30" rows="10">Igen az ő de nagyon</textarea>
+        <input type="button" value="torol" onclick="torol()">
+    </form>
+
+    <script>
+        function masol(){
+            //console.log("Másolás következik...")
+            let szoveg=document.getElementById("elso").value
+            console.log=(szoveg)
+
+            document.getElementById("masodik").value=szoveg
+        }
+
+        function torol(){
+            //console.log("Törlés következik...")
+            let szoveg2=document.getElementById("masodik").value=""
+        }
+    </script>
+</body>
+</html>

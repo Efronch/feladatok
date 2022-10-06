@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .sad{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <h2 class="happy">😊</h2>
+    <h2 class="sad">👿</h2>
+    <button onclick="handleClick()">Are you happy?</button>
+
+    <script>
+        let happyObj=document.querySelector('.happy')
+        let sadObj=document.querySelector('.sad')
+        
+    function handleClick(){
+        console.log(happyObj.classList, sadObj.classList)
+        happyObj.classList.toggle('sad')
+        sadObj.classList.toggle('sad')
+    }
+    </script>
+</body>
+</html>

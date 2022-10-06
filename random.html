@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <button onclick="szinez()">színezés</button>
+
+    <ul></ul>
+    <p></p>
+
+    <script>
+        let v=Math.floor(Math.random()*255)
+        console.log(v)
+
+        function rand(a){
+            return Math.floor(Math.random()*a)
+        }
+
+        function szinez(){
+            let divTomb=document.querySelectorAll('div')
+        for(let obj of divTomb){
+            console.log(obj)
+            obj.style.backgroundColor=`rgb(${rand(255)},${rand(255)},${rand(255)})`
+        }
+        }
+
+        
+
+
+        let vTomb=[]
+        for(let i=1;i<=10;i++){
+        vTomb.push(rand(1000))
+        }
+        console.log(vTomb)
+
+
+        let osszeg=0
+        for(let szam of vTomb){
+            osszeg+=szam
+        }
+        console.log(osszeg)
+        document.querySelector('p').innerHTML+=osszeg
+    </script>
+</body>
+</html>

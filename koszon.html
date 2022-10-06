@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nev" name="valami" placeholder="Emo vagy te ottan?">
+        <input type="button" value="koszon" onclick="koszon()">
+        <hr>
+        <input type="button" value="beír" onclick="beir()">
+    </form>
+    <p class="udv"></p>
+    <hr>
+    <ul></ul>
+
+    <script>
+        function koszon(){
+            let nev=document.getElementById("nev").value
+            console.log(nev)
+            document.querySelector('.udv').innerHTML=`Emo vagy te itten most <b> ${nev} </b> ?`
+        }
+    let nevek=[]
+    function beir(){
+        let nev=document.getElementById("nev").value
+        document.getElementById("nev").value=""
+
+        if(nev.length>0){
+        nevek.push(nev)
+        console.log(nevek)
+        let liStr=""
+        for(let ertek of nevek)
+            liStr+=`<li>${item}</li>`
+        }
+        document.querySelector('ul').innerHTML=liStr
+    }x  
+
+    </script>
+</body>
+</html>
