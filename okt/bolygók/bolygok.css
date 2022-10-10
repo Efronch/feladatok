@@ -1,0 +1,19 @@
+body{
+    background-color: gray;
+    color: white;
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+}
+#kozep{
+    text-align: center;
+}
+hr{
+    background-color: white;
+    width: 80%;
+}
+.row{
+    border: white solid 2px;
+}
