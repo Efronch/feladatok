@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Négyzet</title>
+</head>
+<body>
+    <form>
+        <label for="oldal">Add meg a négyzet oldalát: </label>
+        <input type="number" id="oldal">
+        <input type="button" value="Számol" onclick="szamol()">
+    </form>
+    <div class="terulet"></div>
+    <div id="kerulet"></div>
+
+    <div class="uzi">
+        
+    </div>
+
+    <script>
+        function szamol(){
+            document.querySelector('.uzi').innerHTML
+            document.querySelector('.terulet').innerHTML=""
+            document.querySelector('#kerulet').innerHTML=""
+
+            let oldal=+document.getElementById("oldal").value
+            if(oldal>0){
+                console.log(oldal,typeof(oldal))
+            document.querySelector(".terulet").innerHTML=`Terület: ${oldal*oldal}`
+            document.querySelector("#kerulet").innerHTML=`Kerület: ${4*oldal}`
+            }
+            else{
+                document.querySelector('.uzi').innerHTML="Helytelen adat!"
+            }
+            
+        }
+    </script>
+</body>
+</html>
