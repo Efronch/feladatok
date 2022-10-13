@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Szerkeszthető a háromszög?</h1>
+    <form>
+        <label for="a">a:</label>
+        <input type="number" id="a">
+
+        <label for="b">b:</label>
+        <input type="number" id="b">
+
+        <label for="c">c:</label>
+        <input type="number" id="c">
+
+        <input type="button" value="megvizsgál" onclick="megvizsgal()">
+    </form>
+
+    <div class="eredmeny"></div>
+
+    <script>
+        function megvizsgal(){
+            
+            let a=document.getElementById('a').value
+            let b=document.getElementById('b').value
+            let c=document.getElementById('c').value
+            console.log('klikk volt',a,b,c)
+            if(a+b>c && b+c>a && a+c>b){
+                document.querySelector('.eredmeny').innerHTML="szerkeszthető!"
+            }
+            else{
+                document.querySelector('.eredmeny').innerHTML="nem szerkeszthető!"
+            }
+        }
+    </script>
+</body>
+</html>
