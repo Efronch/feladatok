@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyulás html</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="gyula.js"></script>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <div class="row">   
+            <div class="col-md-6">
+                <label for="uzenet">Üzenet:</label><br>
+                <textarea name="textarea" id="uzenet" cols="55" rows="10" itemid="uzenet"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="nev">Név:</label>
+                <input type="text" class="form-control" id="nev">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email">
+                <br>
+                <input type="button" value="Küldés" onclick="kuldes()">
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
